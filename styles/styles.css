@@ -1,0 +1,27 @@
+
+header{
+    background-color: #2B2A2B;
+    color: white;
+    
+}
+
+nav {
+    padding: 12px, 40px, 12px, 40px;
+}
+
+li{
+    padding: 5px;
+}
+
+section{
+
+} 
+
+#condiciones {
+background-image:url(../img/fondoseccion.jpeg)
+    
+}
+
+#novedades { background-color: #2A5B45;
+}
+
