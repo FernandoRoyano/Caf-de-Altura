@@ -1,263 +1,234 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS-->
-
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+     <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
     <link rel="stylesheet" href="./styles/styles.css" />
-    <title>CAFÉ DE ALTURA</title>
+    <title>Café de altura</title>
   </head>
 
-<!--CABECERA-->
+<!--CABECERA CON FLEXBOX-->
   <body>
-    <header>
-      <nav>
-      <div class="container text-center">
-        <div class="row" id="navegador">
-          <div class="col-2"><img src="./img/cafedealtura.com.svg" alt="logo café de altura"></div>
+    
+<nav>
+<div class="flex">
 
-          <div class="col-5">
-            <ul class="nav">
-              <li>Tienda</li>
-              <li>Suscripción</li>
-              <li>Para Empresas</li>
-              <li>Sobre Nosotros</li>
-              <li>Contacto</li>
-            </ul>
-          </div>
-          <div class="col-2">+34 919 49 05 18</div>
+  <div>
+    <img src="./img/cafedealtura.com.svg" alt="logo">
+    <img src="./icons/Vector.svg" alt="taza logo">
+  </div>
+  
+  <div>
+    <ul>
+      <li>Tienda</li>
+      <li>Suscripción</li>
+      <li>Para Empresas</li>
+      <li>Sobre Nosotros</li>
+      <li>Contacto</li>
+  </ul></div>
 
-          <div class="col-2"><button>Inicio sesión</button></div>
-          <div class="col-1"><img src="./img/Vector.svg" alt=""></div>
-        </div>
+  <div>+34 919 49 05 18</div>
+  <div><button>Inicio sesión</button></div>
+  <div><img src="./icons/bag.svg" alt="bolsa"></div>
+
+</div>
+</nav>  
+
+
+
+
+<!--PARTE PRINCIPAL DE LA WEB-->
+<main>
+
+    <section class="flex2">
+      <article>
+        <h3>De la planta a tu taza</h3>
+        <h1>El mejor café del mundo, ahora en tu casa</h1>
+        
+        <div class="row">
+          <div class="col-6">
+            <button id="origenes">Descubrir orígenes</button>
+            <button id="comprar">Comprar café</button></div>
+          <div class="col"></div>
       </div>
-    </nav>
-    </header>
 
 
-<!--SECCIÓN 1 -->
+        
+       
+      </article>
 
 
-    <main>
-      <section>
-        <article>
-            <div class="container text-center">
-                <div class="row align-items-start">
-                  <div class="col">
-                    <h3>De la planta a tu taza</h3>
-                        <h1>El mejor café del mundo, ahora en tu casa</h1>
-                  </div>
-                  <div class="col">
-                    <img src="./img/Hero image.png" alt="hero" />
-            </div>
-        </article>
-      </section>
+      <article><img src="./img/Hero image.png" alt="hero" /></article>
+    </section>
 
 
-<!--SECCIÓN 2 -->
-
-      <section id="condiciones">
-        <div class="container text-center">
-        <div class="row align-items-start">
-        <div class="col">
-                    <div><img src="./icons/check.svg" alt="check" /></div>
-            <h3>Recibe tu pedido sin preocuparte</h3>
-            <p>
-              Tienes cosas más importante en la cabeza, por eso nuestra suscripción
-              de café, nunca te quedarás sin tu taza de la mañana
-            </p>
-        </div>
+<section class="flex3">
+  <article>
+    <img src="./icons/check.svg" alt="check" class="icons"/>
+    <h3>Recibe tu pedido sin preocuparte</h3>
+    <p>Tienes cosas más importante en la cabeza, por eso nuestra suscripción
+    de café, nunca te quedarás sin tu taza de la mañana
+    </p>
+</article> 
 
 
-        <div class="col">
-                <div><img src="./icons/truck.svg" alt="caminón" /></div>
-            <h3>Envío en 24/48 horas</h3>
-            <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
-        </div>
+<article>
+      <img src="./icons/truck.svg" alt="caminón" class="icons"/>
+      <h3>Envío en 24/48 horas</h3>
+      <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
+  </article>
 
-        <div class="col">
-                <div><img src="./icons/present.svg" alt="present" /></div>
-            <h3>Descuentos y beneficios</h3>
-            <p>
-              Cada 2 meses, te regalamos una bolsa de un nuevo origen sorpresa, para
-              que la descubras junto a nosotros.
-            </p>
-        </div>
-      </section>
+
+  <article>
+      <img src="./icons/present.svg" alt="present" class="icons"/>
+      <h3>Descuentos y beneficios</h3>
+      <p>Cada 2 meses, te regalamos una bolsa de un nuevo origen sorpresa, para que la descubras junto a nosotros.</p>
+  </article>
+</section>
+
 
 <!--SECCIÓN 3 -->
 
-      <section id="novedades">
-        <div class="container text-center">
-          <div class="row align-items-start">
-            <div class="col">
+      <section class="flex4">       
+        <h2>Novedades</h2>
+        <div class="contenedor">  
+            <article>    
               <img src="./img/Costa rica.svg" alt="Costa Rica" />
               <p>Costa Rica Tarrazú</p>
-              <button>Añadir</button>
-            </div>
-            <div class="col">
+              <button><a href="#">Añadir</a></button>
+            </article>
+            <article>
               <img src="./img/Colombia.svg" alt="Colombia" />
               <p>Colombia los Naranjos</p>
-              <button>Añadir</button>
-            </div>
-            <div class="col">
+              <button><a href="#">Añadir</a></button> 
+            </article>
+            <article>
               <img src="./img/Laos.svg" alt="Laos Amanecer" />
               <p>Laos Amanecer</p>
-              <button>Añadir</button>
-            </div>
-            <div class="col">
+              <button><a href="#">Añadir</a></button>
+            </article>
+            <article>
               <img src="./img/Etiopia.svg" alt="Etiopía" />
               <p>Colombia los Naranjos</p>
-              <button>Añadir</button>
-            </div>
-            <p>Ver todos</p>
+              <button><a href="#">Añadir</a></button>
+            </article>
           </div>
-        </div>
+        <p>Ver todos</p>  
       </section>
 
+<!--PREGUNTAS FRECUENTES--> 
 
-      <!--PREGUNTAS FRECUENTES  -->
-      <section id="faqs">
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
-            />
-            <style>
-              .accordion {
-                background-color: #eee;
-                color: #444;
-                cursor: pointer;
-                padding: 18px;
-                width: 100%;
-                border: none;
-                text-align: left;
-                outline: none;
-                font-size: 15px;
-                transition: 0.4s;
-              }
-
-              .active,
-              .accordion:hover {
-                background-color: #ccc;
-              }
-
-              .panel {
-                padding: 0 18px;
-                display: none;
-                background-color: white;
-                overflow: hidden;
-              }
-            </style>
-          </head>
-          <body>
-            <h2>Preguntas frecuentes</h2>
-
-            <button class="accordion">¿Cómo hago el pedido?</button>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-
-            <button class="accordion">
-              ¿Por qué los precios son tan bajos?
-            </button>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-
-            <button class="accordion">
-              ¿Es posible enviar café a mi oficina?
-            </button>
-            <div class="panel">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-
-            <script>
-              var acc = document.getElementsByClassName("accordion");
-              var i;
-
-              for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function () {
-                  this.classList.toggle("active");
-                  var panel = this.nextElementSibling;
-                  if (panel.style.display === "block") {
-                    panel.style.display = "none";
-                  } else {
-                    panel.style.display = "block";
-                  }
-                });
-              }
-            </script>
-      </section>
-
-<!--PRUÉBALO TEXTO-->
-      <section class="container text-center" id="pruebalo">
-        <div class="row align-items-start">
-          <div class="col">
-            <h2>Pruébalo en nuestro coffee shop</h2>
-            <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu pedido y llévate un descuento</p>
-          </div>
-<!--PRUÉBALO IMAGEN -->
-          <div class="col">
-            <img src="./img/Coffesshop.jpeg" alt="coffe shop">
-          </div>
-        </div>
-      </section> 
-
-
-<!--DATOS Y FORMULARIO -->
-
-<section>
-  <h2>Entra en contacto con nosotros</h2>
-  <p>Si tienes dudas, ponte en contacto con nosotros a través del formulario y te responderemos lo antes posible.
-    TAmbién puedes ponerte en contacto con nostros en nuestra dirección o a través del teléfono de la tienda.
-    +1 (555) 987-6543
-    742 Evergreen Terrace
-     
-    Springfield, OR 12345
-    ¿En qué podemos ayudarte?
-    +1 (555) 123-4567
-    support@example.com
-    ¿Buscas un trabajo? Ver nuestras ofertas.
-    Acepto la Política de Privacidad y los Términos y condiciones.
-    Enviar</p>
-
-
-
+<section class="flex41">
+<h2>Preguntas frecuentes</h2>
+<article>
+<h3>Como hago el pedido</h3>
+<p>Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
+</article>
+<article>
+<h3>Por qué los precios son tan bajos</h3>
+<p>Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor beneficio posible. </p>
+</article>
+<article>
+<h3>Es posible enviar café a mi oficina</h3>
+</article>
 </section>
 
 
 
-          </body>
-        </html>
+<!--PRUEBALO--> 
+ 
+<section class="flex5">
+  <div class="row">
+    <div class="col-6"><h2>Pruébalo en nuestro coffee shop</h2>
+      <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu pedido y llévate un descuento</p></div>
+    <div class="col-6"><img src="./img/Coffesshop.jpeg" alt=""></div>
+  </div>
+</section>
 
-    </main>
+ <!--FLEX 6--> 
+<section class="flex6">
+  <article id="info">
+    <h2>Entra en contacto con nosotros</h2>
+      <p>Si tienes dudas, ponte en contacto con nosotros a través del formulario y te responderemos lo antes posible.<br><br>
+      También puedes ponerte en contacto con nostros en nuestra dirección o a través del teléfono de la tienda.<br><br>
+      +1 (555) 987-6543<br><br>
+      Evergreen Terrace<br><br>
+      Springfield, OR 12345<br><br>
+      ¿En qué podemos ayudarte?<br>
+      +1 (555) 123-4567<br><br>
+      support@example.com<br><br>
+      ¿Buscas un trabajo? Ver nuestras ofertas.<br><br>
+      </p>
+  </article>
 
-    <footer></footer>
+  <article id="form">
+    <form>
+      <label for="fname">Nombre completo</label><br>
+      <input type="text" id="fname" name="fname"><br>
+      <label for="lname">Email</label><br>
+      <input type="text" id="lname" name="lname"><br>
+      <label for="phone">Teléfono</label><br> 
+      <input type="tel" id="phone" name="phone"><br>
+      <textarea rows="10" cols="30" placeholder="En qué podemos ayudarte" ></textarea><br>
+      <p>La Política de Privacidad y los Términos y condiciones.
+        Enviar</p>
+      <button type="button">Enviar</button>
+    </form>
+    </article>
+  </article>
+</section>
+</div>
+
+
+<!--FOOTER--> 
+    <footer>
+      <div class="container">
+        <div class="row">
+            <div class="col">   
+              <div><img src="./img/cafedealtura.com.svg" alt="logo"></div><br>       
+              <p> ayudamos en</p>
+              <a href="#">+34 919 49 05 18</a>
+              <br>
+              <a href="#">hola@cafedealtura.com</a>
+            </div>
+            
+            
+            <div class="col">
+            <div> 
+              <ul>
+                <li>Tienda</li>
+                <li>Suscripción</li>
+                <li>Para empresas</li>
+                <li>Sobre nosotros</li>
+                <li>Contacto</li>
+              </ul>
+            </div>   
+          </div>
+
+            <div class="col">
+              <ul>
+                <li>Política de privacidad</li>
+                <li>Política de cookies</li>
+                <li>Términos y condiciones</li>
+              </ul>
+            </div>
+      
+          </div>
+        </div>
+
+
+
+        </div>
+
+    </footer>
+
+
+
+  </main>
   </body>
 </html>
