@@ -13,8 +13,7 @@
   </head>
 
 <!--CABECERA CON FLEXBOX-->
-  <body>
-    
+  <body class="container">
 <nav>
 <div class="flex">
 
@@ -22,7 +21,6 @@
     <img src="./img/cafedealtura.com.svg" alt="logo">
     <img src="./icons/Vector.svg" alt="taza logo">
   </div>
-  
   <div>
     <ul>
       <li>Tienda</li>
@@ -31,7 +29,6 @@
       <li>Sobre Nosotros</li>
       <li>Contacto</li>
   </ul></div>
-
   <div>+34 919 49 05 18</div>
   <div><button>Inicio sesión</button></div>
   <div><img src="./icons/bag.svg" alt="bolsa"></div>
@@ -39,12 +36,7 @@
 </div>
 </nav>  
 
-
-
-
 <!--PARTE PRINCIPAL DE LA WEB-->
-<main>
-
     <section class="flex2">
       <article>
         <h3>De la planta a tu taza</h3>
@@ -54,19 +46,12 @@
           <div class="col-6">
             <button id="origenes">Descubrir orígenes</button>
             <button id="comprar">Comprar café</button></div>
-          <div class="col"></div>
-      </div>
-
-
-        
-       
+        </div>
       </article>
-
-
       <article><img src="./img/Hero image.png" alt="hero" /></article>
     </section>
 
-
+<!--ICONS-->
 <section class="flex3">
   <article>
     <img src="./icons/check.svg" alt="check" class="icons"/>
@@ -75,15 +60,11 @@
     de café, nunca te quedarás sin tu taza de la mañana
     </p>
 </article> 
-
-
 <article>
       <img src="./icons/truck.svg" alt="caminón" class="icons"/>
       <h3>Envío en 24/48 horas</h3>
       <p>Pide tu café antes de las 12h y lo recibirás al día siguiente.</p>
   </article>
-
-
   <article>
       <img src="./icons/present.svg" alt="present" class="icons"/>
       <h3>Descuentos y beneficios</h3>
@@ -91,8 +72,7 @@
   </article>
 </section>
 
-
-<!--SECCIÓN 3 -->
+<!--SECCIÓN 3 CAFÉS -->
 
       <section class="flex4">       
         <h2>Novedades</h2>
@@ -123,36 +103,35 @@
 
 <!--PREGUNTAS FRECUENTES--> 
 
-<section class="flex41">
-<h2>Preguntas frecuentes</h2>
-<article>
-<h3>Como hago el pedido</h3>
-<p>Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
-</article>
-<article>
-<h3>Por qué los precios son tan bajos</h3>
-<p>Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor beneficio posible. </p>
-</article>
-<article>
-<h3>Es posible enviar café a mi oficina</h3>
-</article>
-</section>
-
-
-
-<!--PRUEBALO--> 
- 
-<section class="flex5">
-  <div class="row">
-    <div class="col-6"><h2>Pruébalo en nuestro coffee shop</h2>
-      <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu pedido y llévate un descuento</p></div>
-    <div class="col-6"><img src="./img/Coffesshop.jpeg" alt=""></div>
+<section class="row flex5">
+  <div class="col-6">
+    <h2>Preguntas frecuentes</h2>
+    <article>
+    <h3>Como hago el pedido</h3>
+    <p>Selecciona el café que desees probar y completa el proceso de compra. Si lo prefieres, te preguntaremos cada cuánto quieres que te lo mandemos a casa y así nunca te quedarás sin café.</p>
+    </article>
+    <article>
+    <h3>Por qué los precios son tan bajos</h3>
+    <p>Viajamos constantemente para encontrar los mejores granos y a los agricultores más exigentes. Si podemos ofrecerte estos precios es porque tratamos directamente con los productores de café, sin intermediarios. Así obtenemos el mejor precio para ti y la persona que está detrás de los granos de café recibe el mayor beneficio posible. </p>
+    </article>
+    <article>
+    <h3>Es posible enviar café a mi oficina</h3>
+    </article>
+    <p id="dudas">Resolvemos tus dudas</p>
   </div>
 </section>
 
- <!--FLEX 6--> 
-<section class="flex6">
-  <article id="info">
+<!--PRUEBALO--> 
+ 
+<section class="flex6 row">
+    <div class="col-6"><h2>Pruébalo en nuestro coffee shop</h2>
+      <p>Visita nuestra cafetería en el centro de la ciudad para probar los granos de café antes de hacer tu pedido y llévate un descuento</p></div>
+    <div class="col-6"><img src="./img/Coffesshop.jpeg" alt=""></div>
+</section>
+
+ <!--FLEX 6 FORMULARIO--> 
+<section class="flex7 row">
+  <article class="col-6" id="info">
     <h2>Entra en contacto con nosotros</h2>
       <p>Si tienes dudas, ponte en contacto con nosotros a través del formulario y te responderemos lo antes posible.<br><br>
       También puedes ponerte en contacto con nostros en nuestra dirección o a través del teléfono de la tienda.<br><br>
@@ -166,39 +145,99 @@
       </p>
   </article>
 
-  <article id="form">
+  <article class="formulario col-6">
     <form>
       <label for="fname">Nombre completo</label><br>
       <input type="text" id="fname" name="fname"><br>
       <label for="lname">Email</label><br>
       <input type="text" id="lname" name="lname"><br>
       <label for="phone">Teléfono</label><br> 
-      <input type="tel" id="phone" name="phone"><br>
+      <div class="phoneForm">
+        <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><select name="pais">
+            <option value="AL">AL</option>
+            <option value="AF">AF</option>
+            <option value="DE">DE</option>
+            <option value="AD">AD</option>
+            <option value="AO">AO</option>
+            <option value="AI">AI</option>
+            <option value="AQ">AQ</option>
+            <option value="AG">AG</option>
+            <option value="AN">AN</option>
+            <option value="SA">SA</option>
+            <option value="DZ">DZ</option>
+            <option value="AR">AR</option>
+            <option value="AM">AM</option>
+            <option value="AW">AW</option>
+            <option value="AU">AU</option>
+            <option value="AT">AT</option>
+            <option value="AZ">AZ</option>
+            <option value="BS">BS</option>
+            <option value="BH">BH</option>
+            <option value="BD">BD</option>
+            <option value="BB">BB</option>
+            <option value="BE">BE</option>
+            <option value="BZ">BZ</option>
+            <option value="BJ">BJ</option>
+            <option value="BM">BM</option>
+            <option value="BY">BY</option>
+            <option value="MM">MM</option>
+            <option value="BO">BO</option>
+            <option value="BA">BA</option>
+            <option value="BW">BW</option>
+            <option value="BR">BR</option>
+            <option value="BN">BN</option>
+            <option value="BG">BG</option>
+            <option value="BF">BF</option>
+            <option value="BI">BI</option>
+            <option value="BT">BT</option>
+            <option value="CV">CV</option>
+            <option value="KH">KH</option>
+            <option value="CM">CM</option>
+            <option value="CA">CA</option>
+            <option value="TD">TD</option>
+            <option value="CL">CL</option>
+            <option value="CN">CN</option>
+            <option value="CY">CY</option>
+            <option value="VA">VA</option>
+            <option value="CO">CO</option>
+            <option value="DM">DM</option>
+            <option value="EC">EC</option>
+            <option value="EG">EG</option>
+            <option value="SV">SV</option>
+            <option value="AE">AE</option>
+            <option value="ER">ER</option>
+            <option value="SI">SI</option>
+            <option value="ES">ES</option>
+            <option value="US"  selected>US</option>
+            <option value="ZW">ZW</option>
+            </select></span>
+            <input type="text" class="form-control" placeholder="+1 (555) 987-6543" aria-label="Username" aria-describedby="basic-addon1" id="form-phone">
+        </div>
+    </div>
       <textarea rows="10" cols="30" placeholder="En qué podemos ayudarte" ></textarea><br>
       <p>La Política de Privacidad y los Términos y condiciones.
         Enviar</p>
       <button type="button">Enviar</button>
     </form>
-    </article>
   </article>
-</section>
+  </section>
 </div>
 
 
 <!--FOOTER--> 
     <footer>
       <div class="container">
+        <div><img src="./img/cafedealtura.com.svg" alt="logo"></div>
         <div class="row">
-            <div class="col">   
-              <div><img src="./img/cafedealtura.com.svg" alt="logo"></div><br>       
+            <div class="col-4">   
+              <br>       
               <p> ayudamos en</p>
-              <a href="#">+34 919 49 05 18</a>
+              <button id="phone"><a href="#"></a>+34 919 49 05 18</a></button>
               <br>
-              <a href="#">hola@cafedealtura.com</a>
+              <button id="email"><a href="#"></a>+hola@cafedealtura.com</a></button>
             </div>
-            
-            
-            <div class="col">
+            <div class="col-4">
             <div> 
               <ul>
                 <li>Tienda</li>
@@ -209,8 +248,7 @@
               </ul>
             </div>   
           </div>
-
-            <div class="col">
+          <div class="col-4">
               <ul>
                 <li>Política de privacidad</li>
                 <li>Política de cookies</li>
@@ -220,15 +258,11 @@
       
           </div>
         </div>
+      </footer>
 
+      <section id="copyright">
+        <div>Todos los derechos reservados - Café de Altura SL - 2022</div>
+      </section>
 
-
-        </div>
-
-    </footer>
-
-
-
-  </main>
   </body>
 </html>
