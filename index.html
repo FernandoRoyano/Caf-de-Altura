@@ -7,6 +7,7 @@
     <!-- CSS-->
      <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Outfit">
     <link rel="stylesheet" href="./styles/styles.css" />
     <title>Café de altura</title>
@@ -41,7 +42,6 @@
       <article>
         <h3>De la planta a tu taza</h3>
         <h1>El mejor café del mundo, ahora en tu casa</h1>
-        
         <div class="row">
           <div class="col-6">
             <button id="origenes">Descubrir orígenes</button>
@@ -98,7 +98,8 @@
               <button><a href="#">Añadir</a></button>
             </article>
           </div>
-        <p>Ver todos</p>  
+          <p><a href="#" class="col">Ver Todos<img src="./icons/arrow.svg" alt="Flecha Derecha" width="18px" height="8px"></a></p>
+
       </section>
 
 <!--PREGUNTAS FRECUENTES--> 
@@ -117,7 +118,7 @@
     <article>
     <h3>Es posible enviar café a mi oficina</h3>
     </article>
-    <p id="dudas">Resolvemos tus dudas</p>
+    <p id="dudas"><a href="#">Resolvemos tus dudas <img src="./icons/arrow.svg" alt="rightArrow"></a></p>
   </div>
 </section>
 
@@ -216,8 +217,7 @@
         </div>
     </div>
       <textarea rows="10" cols="30" placeholder="En qué podemos ayudarte" ></textarea><br>
-      <p>La Política de Privacidad y los Términos y condiciones.
-        Enviar</p>
+      <p>La Política de Privacidad y los Términos y condiciones.</p>
       <button type="button">Enviar</button>
     </form>
   </article>
@@ -226,43 +226,42 @@
 
 
 <!--FOOTER--> 
-    <footer>
+<footer>
       <div class="container">
-        <div><img src="./img/cafedealtura.com.svg" alt="logo"></div>
+        <div><img src="./img/cafedealtura.com.svg" alt="logo">
+          <img src="./icons/Vector.svg" alt="taza logo"></div>
         <div class="row">
             <div class="col-4">   
               <br>       
               <p> ayudamos en</p>
-              <button id="phone"><a href="#"></a>+34 919 49 05 18</a></button>
+              <button id="phone"><i class="bi bi-telephone-fill"></i><a href="#"></a>+34 919 49 05 18</a></button>
               <br>
-              <button id="email"><a href="#"></a>+hola@cafedealtura.com</a></button>
+              <button id="email"><i class="bi bi-envelope-fill"></i><a href="#"></a>hola@cafedealtura.com</a></button>
             </div>
             <div class="col-4">
             <div> 
               <ul>
-                <li>Tienda</li>
-                <li>Suscripción</li>
-                <li>Para empresas</li>
-                <li>Sobre nosotros</li>
-                <li>Contacto</li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Suscripción<a</li>
+                <li><a href="#">Para empresas</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Contacto</a></li>
               </ul>
             </div>   
           </div>
           <div class="col-4">
               <ul>
-                <li>Política de privacidad</li>
-                <li>Política de cookies</li>
-                <li>Términos y condiciones</li>
+                <li><a href="#">Política de privacidad</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
               </ul>
             </div>
-      
           </div>
         </div>
-      </footer>
-
+  </footer>
       <section id="copyright">
-        <div>Todos los derechos reservados - Café de Altura SL - 2022</div>
-      </section>
+        <p>Todos los derechos reservados - Café de Altura SL - 2022</p>
+    </section>
 
   </body>
 </html>
